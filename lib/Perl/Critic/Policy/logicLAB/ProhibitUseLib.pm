@@ -1,14 +1,12 @@
 package Perl::Critic::Policy::logicLAB::ProhibitUseLib;
 
-# $Id$
-
 use strict;
 use warnings;
 use base 'Perl::Critic::Policy';
 use Perl::Critic::Utils qw{ $SEVERITY_MEDIUM };
-use 5.008; #5.8.0
+use 5.008;    #5.8.0
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 Readonly::Scalar my $EXPL => q{Use PERL5LIB environment instead};
 
@@ -40,6 +38,14 @@ sub violates {
 __END__
 
 =pod
+
+=begin markdown
+
+[![CPAN version](https://badge.fury.io/pl/Perl-Critic-Policy-logicLAB-ProhibitUseLib.svg)](http://badge.fury.io/pl/Perl-Critic-Policy-logicLAB-ProhibitUseLib)
+[![Build Status](https://travis-ci.org/jonasbn/pcpmpul.svg?branch=master)](https://travis-ci.org/jonasbn/pcpmpul)
+[![Coverage Status](https://coveralls.io/repos/jonasbn/pcpmpul/badge.png)](https://coveralls.io/r/jonasbn/pcpmpul)
+
+=end markdown
 
 =head1 NAME
 
